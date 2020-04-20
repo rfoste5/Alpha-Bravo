@@ -1,0 +1,93 @@
+<!--Description: Assignment 2 Part 2: Clock Application
+    Date: March 12, 2018
+    Author: Ryan Foster (rfoste5)-->
+
+<!--Used same name for each radio button option to solve problem from assign1 where more than one could be checked at a time-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Clock Work</title>
+<link rel="stylesheet" type="text/css" href="part2.css">
+<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet"> <!--google font imported-->
+<script src="rfoste5part2.js"></script>
+</head>
+<body>
+    
+<!--Start of webpage-->
+<h1>Welcome to Ryan's Word Clock</h1> 
+
+<!--Used Div's to split up sections of webpage and to align them accordingly-->
+    <!--div used to hold option to see the current time-->
+<div id="seetime">
+<h2>See Time in:</h2> 
+<input type="radio" name="timechoice" id="wordcurrent" value="Words" size="20">Words 
+<input type="radio" name="timechoice" id="numbercurrent" value="Numbers" size="20">Numbers
+<br><br>
+<button onclick="seeTime()">Click to get the current time</button>
+<br><br><br><!--breaks used to seperate space from bottom of div and horizontal line since all three div's on top line floated left-->
+</div>
+   
+<!--used span tag to allow for numbers to be beside eachother without a break-->
+<div id="digitalclock">
+<h3 id="digclock"></h3> 
+</div>
+
+<!--div used to hold the option to set your own time -->
+<div id="settime">
+<h2>Set Time:</h2>
+<input type="time" name="picktime" id="timeset">
+<br><br>
+<input type="radio" name="choice" id="setword" value="" size="20">Words
+<input type="radio" name="choice" id="setnumber" value="" size="20">Numbers
+<br><br>
+<button onclick="setTime()">Click to see your own time</button>
+<br><br><br>
+</div>
+
+<hr><!--horizontal rule used to split the selection aspect of the page from the 'word' result-->
+
+<!--span tags used so there are no breaks between worded numbers as well as to allow for individual ID's -->
+<table>
+<div id="wordclock">
+<h3 id="words">
+   <tr>
+   <th> <span id="itis"> It Is</span> </th>
+   <th> <span id="half"> Half</span> </th>
+   <th>  <span id="ten1"> Ten</span> </th>
+   <th>  <span id="quarter"> Quarter</span> </th>
+   </tr> 
+    <span class="special" id="morning"> In the Morning</span>
+    <br>
+    <span id="twenty"> Twenty</span>
+    <span id="pastfive">Five</span>
+    <span id="to"> To</span>
+    <span id="past"> Past</span>
+    <span class="special2" id="afternoon"> In the Afternoon</span>
+    <br>
+    <span id="one"> One</span>
+    <span id="two"> Two</span>
+    <span id="three"> Three</span>
+    <span id="four"> Four</span>
+    <span id="five"> Five</span>
+    <span class="special4" id="evening"> In the Evening</span>
+    <br>
+    <span id="six"> Six</span>
+    <span id="seven"> Seven</span>
+    <span id="eight"> Eight</span>
+    <span id="nine"> Nine</span>
+    <span id="ten"> Ten</span>
+    <span class="special3" id="night"> In the Middle of the Night</span>
+    <br>
+    <span id="eleven"> Eleven</span>
+    <span id="twelve"> Twelve</span>
+    <span id="oclock"> O'Clock</span>
+    <span id="AM"> AM</span>
+    <span id="PM"> PM</span>
+</h3> 
+</div>
+    </table>
+     
+</body>
+</html>

@@ -1,0 +1,122 @@
+/*Description: Clock Word Generator Styles
+    Date: February 5, 2018
+    Author: Ryan Foster (rfoste5)*/
+
+/*Styles for all the individual divs lines 6 through 31*/
+div#wordclock {
+    background-color: black;
+    border: 25px;
+    border-color: white;
+    margin-top: -50px;
+    font-family: 'Berkshire Swash', cursive; /*google font used*/  
+    width: 100%;
+}
+
+div#settime {
+    float:left; 
+    width: 421px;
+    text-align: center;
+    color: white;
+}
+
+div#digitalclock {
+    float:left;
+    width: 550px;
+    text-align: center;
+    color: black; 
+}
+
+div#seetime {
+    float: left;
+    width: 421px;
+    text-align: center;  
+    color: white;
+}
+
+/*heading text styles lines 34 to 51*/
+h1 {
+    text-align: center;
+    background-color: black;
+    color: cornflowerblue;
+    font-family: cursive;
+    font-size: 50px;  
+   
+}
+
+h2 {
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+    
+}
+
+h3#words {
+    color: #1A1A1A;
+    font-size: 60px;
+    padding: 10px;
+}
+
+h4{
+    color: white;
+}
+
+/*used margin to move it to a seperate location within the div*/
+#AM {
+    margin-left: 430px;
+}
+
+
+/*lines 78 through 92 font size increased for visual number clock*/
+#hour {
+    font-size: 80px;
+}
+
+#minute {
+    font-size: 80px;
+}
+
+#second {
+    font-size: 80px;
+}
+
+.semicolan {
+    font-size: 80px;
+}
+
+
+hr { 
+    margin: 10px 0 10px 0; 
+}
+
+#digclock {
+    font-size: 70px;
+    margin-top: 10px;
+    font color: cornflowerblue;
+    
+}
+
+/*used to align the time of day options in the word clock*/
+.special {
+    font-size: 20px;
+    margin-left: 170px;
+}
+
+.special2 {
+    font-size: 20px;
+    margin-left: 220px;
+}
+
+.special3 {
+    font-size: 20px;
+    margin-left: 70px;
+}
+
+.special4 {
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+input#numbercurrent {
+    color: white;
+}
+
